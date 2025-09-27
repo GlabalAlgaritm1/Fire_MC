@@ -18,8 +18,8 @@ import deviseicon from '../src/img/Icon_image/device.png'
 
 // Film
 
-import Card1 from './img/Card_Image/Film/Card1.jpg'
-import FilmCard2 from '../src/img/Card_Image/Film/Card2.jpeg'
+import FilmCard1 from '../src/img/Card_Image/Film/Card1.jpg'
+import FilmCard2 from './img/Card_Image/Film/Card2.jpeg'
 import FilmCard3 from '../src/img/Card_Image/Film/Card3.jpg'
 import FilmCard4 from '../src/img/Card_Image/Film/Card4.png'
 import FilmCard5 from '../src/img/Card_Image/Film/Card5.png'
@@ -33,7 +33,7 @@ import FilmCard10 from '../src/img/Card_Image/Film/Card10.jpg'
 
 
 // Seriallar 
-import SerialCard1 from '../src/img/Card_Image/Seriallar/Card1.jpeg'
+import SerialCard1 from './img/Card_Image/Seriallar/Card1.jpeg'
 import SerialCard2 from '../src/img/Card_Image/Seriallar/Card2.jpeg'
 import SerialCard3 from '../src/img/Card_Image/Seriallar/Card3.jpg'
 import SerialCard4 from '../src/img/Card_Image/Seriallar/Card4.jpeg'
@@ -47,7 +47,7 @@ import SerialCard10 from '../src/img/Card_Image/Seriallar/Card10.jpg'
 // import SerialCard12 from '../src/img/Card_Image/Card12.jpeg'
 
 // Animelar 
-import AnimeCard1 from '../src/img/Card_Image/Animelar/Card1.jpg'
+import AnimeCard1 from './img/Card_Image/Animelar/Card1.jpg'
 import AnimeCard2 from '../src/img/Card_Image/Animelar/Card2.jpg'
 import AnimeCard3 from '../src/img/Card_Image/Animelar/Card3.jpeg'
 import AnimeCard4 from '../src/img/Card_Image/Animelar/Card4.jpeg'
@@ -63,7 +63,7 @@ import AnimeCard12 from '../src/img/Card_Image/Animelar/Card12.jpg'
 
 // Multfilmlar 
 import MultfilmCard1 from '../src/img/Card_Image/Multfilmlar/Card1.jpg'
-import MultfilmCard2 from '../src/img/Card_Image/Multfilmlar/Card2.jpeg'
+import MultfilmCard1 from './img/Card_Image/Multfilmlar/Card1.jpg'
 import MultfilmCard3 from '../src/img/Card_Image/Multfilmlar/Card3.jpeg'
 import MultfilmCard4 from '../src/img/Card_Image/Multfilmlar/Card4.jpg'
 import MultfilmCard5 from '../src/img/Card_Image/Multfilmlar/Card5.jpg'
@@ -100,7 +100,7 @@ console.log(generateUniqueId());
 export const FilmData = [
     {
         id: uuidv4(),
-        card1: Card1,
+        card1: FilmCard1,
         year: "13+",
         date: "2018",
         quality: "HD",
