@@ -17,7 +17,7 @@ const App = () => {
           <Route path='/profil' element={<Profil />} />
           <Route path='/' element={<Home />} />
           <Route path='/search' element={<Search />} />
-          <Route path='/film/:id' element={<FilmDetail />} />
+          <Route path='/film/:id' element={<FilmDetail />} /> 
           <Route path='/serial/:id' element={<SerialDetail />} />
 
           <Route path='/anime/:id' element={<AnimeDetail />} />
