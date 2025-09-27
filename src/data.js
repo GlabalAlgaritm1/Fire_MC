@@ -18,7 +18,7 @@ import deviseicon from '../src/img/Icon_image/device.png'
 
 // Film
 
-import FilmCard1 from '../src/img/Card_Image/Film/Card1.jpg'
+import Card1 from './img/Card_Image/Film/Card1.jpg'
 import FilmCard2 from '../src/img/Card_Image/Film/Card2.jpeg'
 import FilmCard3 from '../src/img/Card_Image/Film/Card3.jpg'
 import FilmCard4 from '../src/img/Card_Image/Film/Card4.png'
@@ -100,7 +100,7 @@ console.log(generateUniqueId());
 export const FilmData = [
     {
         id: uuidv4(),
-        card1: FilmCard1,
+        card1: Card1,
         year: "13+",
         date: "2018",
         quality: "HD",
