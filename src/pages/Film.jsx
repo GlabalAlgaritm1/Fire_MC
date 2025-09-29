@@ -53,13 +53,13 @@ const Film = () => {
           <Link className="text-2xl font-semibold">Filmlar <span className="text-white">:</span></Link>
         </div>
 
+        {/* 1-qator */}
         <Swiper
-          spaceBetween={20}
           grabCursor={true}
           breakpoints={{
-            0: { slidesPerView: 2, slidesPerGroup: 2 },
-            640: { slidesPerView: 4, slidesPerGroup: 4 },
-            1024: { slidesPerView: 6, slidesPerGroup: 6 },
+            0: { slidesPerView: 2, slidesPerGroup: 2, spaceBetween: 8 },   // 📱 Telefon
+            640: { slidesPerView: 4, slidesPerGroup: 4, spaceBetween: 16 }, // 📲 Planshet
+            1024: { slidesPerView: 6, slidesPerGroup: 6, spaceBetween: 20 } // 💻 Katta ekran
           }}
           className="mb-8"
         >
@@ -68,13 +68,13 @@ const Film = () => {
           ))}
         </Swiper>
 
+        {/* 2-qator */}
         <Swiper
-          spaceBetween={20}
           grabCursor={true}
           breakpoints={{
-            0: { slidesPerView: 2, slidesPerGroup: 2 },
-            640: { slidesPerView: 4, slidesPerGroup: 4 },
-            1024: { slidesPerView: 6, slidesPerGroup: 6 },
+            0: { slidesPerView: 2, slidesPerGroup: 2, spaceBetween: 8 },
+            640: { slidesPerView: 4, slidesPerGroup: 4, spaceBetween: 16 },
+            1024: { slidesPerView: 6, slidesPerGroup: 6, spaceBetween: 20 }
           }}
         >
           {secondRow.map((item) => (
