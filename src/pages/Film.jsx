@@ -16,11 +16,11 @@ const Film = () => {
         <img
           src={item.card1}
           alt="Film Card"
-          className="w-full max-w-[300px] h-[275px] border-b object-cover rounded-lg mb-3 
+          className="max-w-[300px] h-[275px] border-b object-cover rounded-lg mb-3
                      max-md:h-[250px] 
-                     max-sm:w-[220px] max-sm:h-[280px] max-sm:object-cover"
+                     max-sm:w-[250px] max-sm:h-[320px] max-sm:object-cover"
         />
-        <span className="absolute bottom-[72px] right-2 font-semibold bg-white/10 text-white text-base p-1 rounded-md border border-white/20 opacity-100 group-hover:opacity-0 transition-opacity duration-300">
+        <span className="absolute top-3 left-2 font-semibold bg-white/10 text-white text-base p-1 rounded-md border border-white/20 opacity-100 group-hover:opacity-0 transition-opacity duration-300">
           {item.year}
         </span>
         <div className="overflow-hidden w-full h-[28px]">
@@ -39,7 +39,7 @@ const Film = () => {
   const renderSeeAll = (id) => (
     <li
       key={id}
-      className="flex flex-col items-center justify-center border border-white/20 rounded-lg hover:bg-white/20 transition-all duration-300 cursor-pointer h-[275px] max-sm:w-[220px] max-sm:h-[220px]"
+      className="flex flex-col items-center justify-center border border-white/20 rounded-lg hover:bg-white/20 transition-all duration-300 cursor-pointer h-[275px] max-sm:w-[250px] max-sm:h-[250px]"
     >
       <Link to="/film" className="flex flex-col items-center justify-center gap-y-3">
         <span className="text-white text-xl font-semibold max-sm:text-base">Barchasini ko‘rish</span>
@@ -67,9 +67,9 @@ const Film = () => {
         <Swiper
           grabCursor={true}
           breakpoints={{
-            0: { slidesPerView: 2, slidesPerGroup: 2, spaceBetween: 8 }, // 📱 Telefon
-            640: { slidesPerView: 4, slidesPerGroup: 4, spaceBetween: 16 }, // 📲 Planshet
-            1024: { slidesPerView: 6, slidesPerGroup: 6, spaceBetween: 20 } // 💻 Katta ekran
+            0: { slidesPerView: 2, slidesPerGroup: 2, spaceBetween: 8 },
+            640: { slidesPerView: 4, slidesPerGroup: 4, spaceBetween: 16 },
+            1024: { slidesPerView: 6, slidesPerGroup: 6, spaceBetween: 20 }
           }}
           className="mb-8"
         >
