@@ -96,11 +96,11 @@ const Home = () => {
 
           {/* Title & Description */}
           <Link to={currentVideo.link}>
-            <div className="absolute bottom-5 left-5 bg-black/50 p-3 sm:p-4 rounded-xl max-w-full sm:max-w-lg md:max-w-2xl">
+            <div className="absolute bottom-5 left-5 bg-black/50 p-3 sm:p-4 rounded-xl max-w-full max-sm:max-w-lg md:max-w-2xl max-sm:bottom-0 max-sm:left-0">
               <h2 className="text-lg sm:text-xl md:text-2xl font-bold text-white mb-1 sm:mb-2">
                 {currentVideo.title}
               </h2>
-              <p className="text-white/80 text-xs sm:text-sm md:text-base sm:truncate">{currentVideo.desc}</p>
+              <p className="text-white/80 w-full max-sm:w-64 text-xs max-sm:text-sm md:text-base max-sm:truncate">{currentVideo.desc}</p>
             </div>
           </Link>
 
