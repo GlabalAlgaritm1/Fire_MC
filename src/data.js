@@ -148,7 +148,6 @@ export const FilmData = [
 
         badge: "Premyera",
         film: Cardvideo2,
-        badge: "Premyera",
     },
     {
         id: uuidv4(),

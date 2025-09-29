@@ -3,7 +3,7 @@ import React, { useState, useEffect } from 'react'
 import { useParams } from 'react-router-dom'
 import { data, FilmData, images } from '../data'
 import Breadcrumb from '../components/Breadcrumb'
-
+import '../css/fonts.css'
 const FilmDetail = () => {
     const { id } = useParams()
     const film = FilmData.find((item) => item.id === id)
@@ -88,8 +88,11 @@ const FilmDetail = () => {
             <section >
                 <video poster={film.card1} className='w-full h-[90vh] relative' controls src={film.film}></video>
                 <div className="absolute w-full h-[99vh] bg-gray-600/65 top-0">
-                    <p className='absolute left-3 top-[450px] z-40 text-3xl'>
+                    <h1 className='absolute left-3 top-[350px] z-40 text-3xl text-white font-bold'>
                         {film.title}
+                    </h1>
+                    <p className='absolute w-full max-w-xl left-5 top-[400px] z-40 text-xl text-red-300/55 font-semibold truncate-3'>
+                        {film.desc}
                     </p>
                     <button className='absolute left-3 top-[520px] z-40 border border-blue-500/75 bg-blue-500/75 px-10 py-2 rounded-lg hover:bg-blue-500 hover:transition-all hover:duration-300'>
                         <span className='font-semibold text-white'>

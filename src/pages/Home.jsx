@@ -10,7 +10,7 @@ import { FilmData, SerialData, AnimeData, MultfilmData } from '../data'
 const Home = () => {
     const videoRef = useRef(null)
 
-    // Barcha videolarni yig‘ish (faqat possible = true bo‘lsa)
+    // 🔹 Barcha videolarni yig‘ish (faqat possible = true bo‘lsa)
     const allVideos = [
         ...FilmData.filter(item => item.film && item.possible !== false).map(v => ({
             src: v.film,
@@ -41,7 +41,7 @@ const Home = () => {
     const [currentIndex, setCurrentIndex] = useState(0)
     const [isMuted, setIsMuted] = useState(true)
 
-    // Keyingi video
+    // 🔄 Keyingi video
     const handleRefresh = () => {
         let nextIndex = currentIndex + 1
         if (nextIndex >= allVideos.length) nextIndex = 0
@@ -49,22 +49,23 @@ const Home = () => {
         setIsMuted(true)
     }
 
-    // Mute / Voice
+    // 🔊 Mute / Voice
     const toggleMute = () => {
         setIsMuted(!isMuted)
     }
 
-    // Video ekrandan chiqsa mute bo‘lishi
+    // 📌 Video yarimdan kam ko‘rinsa avtomatik mute bo‘lsin
     useEffect(() => {
         const observer = new IntersectionObserver(
             (entries) => {
                 entries.forEach((entry) => {
-                    if (!entry.isIntersecting) {
+                    if (entry.intersectionRatio < 0.5) {
+                        // faqat 50% dan kam ko‘rinib qolsa muted bo‘ladi
                         setIsMuted(true)
                     }
                 })
             },
-            { threshold: 0.5 }
+            { threshold: [0, 0.5, 1] } // 0% / 50% / 100% trigger
         )
 
         if (videoRef.current) {
@@ -85,7 +86,7 @@ const Home = () => {
             <Film />
             <Seriallar />
 
-            {/* Video section */}
+            {/* 🎬 Video section */}
             {currentVideo && (
                 <section className='relative mt-6'>
                     {/* Video link */}
@@ -101,7 +102,7 @@ const Home = () => {
                         />
                     </Link>
 
-                    {/* Title & Desc (ham link bo‘lishi mumkin) */}
+                    {/* Title & Desc */}
                     <Link to={currentVideo.link}>
                         <div className="absolute bottom-10 left-5 bg-black/50 p-4 rounded-xl max-w-2xl">
                             <h2 className="text-2xl font-bold text-white mb-2">

@@ -12,6 +12,9 @@ import Page404 from './pages/Page404'
 import Favourite from './pages/Favourite'
 import AllFilm from './pages/AllFilm'
 import Sozlamalar from './pages/Sozlamalar'
+import AllSerial from './pages/AllSerial'
+import AllAnime from './pages/AllAnime'
+import AllMultfilm from './pages/AllMultfilm'
 
 const App = () => {
   const routes = createBrowserRouter(
@@ -26,6 +29,9 @@ const App = () => {
           <Route path='/profil' element={<Profil />} />
           <Route path='/favourite' element={<Favourite />} />
           <Route path='/allfilm' element={<AllFilm />} />
+          <Route path='/allserial' element={<AllSerial />} />
+          <Route path='/allanime' element={<AllAnime />} />
+          <Route path='/allmultfilm' element={<AllMultfilm />} />
 
           <Route path='/search' element={<Search />} />
           <Route path='/film/:id' element={<FilmDetail />} /> 
