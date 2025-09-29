@@ -8,14 +8,25 @@ import AnimeDetail from './pages/AnimeDetail'
 import SerialDetail from './pages/SerialDetail'
 import MultfilmDetail from './pages/MultfilmDetail'
 import Profil from './components/Profil'
+import Page404 from './pages/Page404'
+import Favourite from './pages/Favourite'
+import AllFilm from './pages/AllFilm'
+import Sozlamalar from './pages/Sozlamalar'
 
 const App = () => {
   const routes = createBrowserRouter(
     createRoutesFromChildren(
       <>
         <Route element={<Mainlayout />}>
-          <Route path='/profil' element={<Profil />} />
           <Route path='/' element={<Home />} />
+
+          <Route path='/sozlamalar' element={<Sozlamalar />} />
+
+
+          <Route path='/profil' element={<Profil />} />
+          <Route path='/favourite' element={<Favourite />} />
+          <Route path='/allfilm' element={<AllFilm />} />
+
           <Route path='/search' element={<Search />} />
           <Route path='/film/:id' element={<FilmDetail />} /> 
           <Route path='/serial/:id' element={<SerialDetail />} />
@@ -24,6 +35,7 @@ const App = () => {
           <Route path='/multfilm/:id' element={<MultfilmDetail />} />
 
         </Route>
+        <Route path='*' element={<Page404/>}/>
       </>
     )
   )

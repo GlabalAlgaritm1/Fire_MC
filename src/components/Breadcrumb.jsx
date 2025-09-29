@@ -8,7 +8,7 @@ const Breadcrumb = () => {
   const pathArrWithoutHome = pathArr.filter((path) => path !== "")
 
   // Faqat ruxsat etilgan sahifalar
-  const allowedPages = ["film", "serial", "anime", "multfilm"]
+  const allowedPages = ["film", "serial", "anime", "multfilm","favourite", "allfilm","sozlamalar"]
 
   // Birinchi path elementini tekshirish
   const firstPath = pathArrWithoutHome[0]

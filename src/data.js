@@ -15,7 +15,14 @@ import cashicon from '../src/img/Icon_image/cash.png'
 import promocodeicon from '../src/img/Icon_image/promocode.png'
 import ransomhistoryicon from '../src/img/Icon_image/ransomhistory.png'
 import deviseicon from '../src/img/Icon_image/device.png'
-
+import loginicon from '../src/img/Icon_image/login.png'
+import voiseicon from '../src/img/Icon_image/voice.png'
+import mutedicon from '../src/img/Icon_image/mute.png'
+import refreshicon from '../src/img/Icon_image/refresh.png'
+import shareicon from '../src/img/Icon_image/uzatish.png'
+import favouriteicon from '../src/img/Icon_image/favourite.png'
+import activefavouriteicon from '../src/img/Icon_image/activefavourite.png'
+import deleteicon from '../src/img/Icon_image/delete.png'
 // Film
 
 import FilmCard1 from '../src/img/Card_Image/Film/Card1.jpg'
@@ -28,8 +35,20 @@ import FilmCard7 from '../src/img/Card_Image/Film/Card7.jpg'
 import FilmCard8 from '../src/img/Card_Image/Film/Card8.jpeg'
 import FilmCard9 from '../src/img/Card_Image/Film/Card9.jpg'
 import FilmCard10 from '../src/img/Card_Image/Film/Card10.jpg'
-// import FilmCard11 from '../src/img/Card_Image/Film/Card11.jpeg'
-// import FilmCard12 from '../src/img/Card_Image/Film/Card12.jpeg'
+import FilmCard11 from '../src/img/Card_Image/Film/Card11.jpg'
+import FilmCard12 from '../src/img/Card_Image/Film/Card12.jpg'
+import FilmCard13 from '../src/img/Card_Image/Film/Card13.jpg'
+import FilmCard14 from '../src/img/Card_Image/Film/Card14.jpg'
+import FilmCard15 from '../src/img/Card_Image/Film/Card15.jpg'
+import FilmCard16 from '../src/img/Card_Image/Film/Card16.png'
+import FilmCard17 from '../src/img/Card_Image/Film/Card17.jpg'
+import FilmCard18 from '../src/img/Card_Image/Film/Card18.jpg'
+import FilmCard19 from '../src/img/Card_Image/Film/Card19.jpg'
+import FilmCard20 from '../src/img/Card_Image/Film/Card20.jpg'
+import FilmCard21 from '../src/img/Card_Image/Film/Card21.jpg'
+import FilmCard22 from '../src/img/Card_Image/Film/Card22.jpg'
+import FilmCard23 from '../src/img/Card_Image/Film/Card23.jpg'
+import FilmCard24 from '../src/img/Card_Image/Film/Card24.jpg'
 
 
 // Seriallar 
@@ -43,8 +62,21 @@ import SerialCard7 from '../src/img/Card_Image/Seriallar/Card7.jpg'
 import SerialCard8 from '../src/img/Card_Image/Seriallar/Card8.jpg'
 import SerialCard9 from '../src/img/Card_Image/Seriallar/Card9.jpg'
 import SerialCard10 from '../src/img/Card_Image/Seriallar/Card10.jpg'
-// import SerialCard11 from '../src/img/Card_Image/Card11.jpeg'
-// import SerialCard12 from '../src/img/Card_Image/Card12.jpeg'
+import SerialCard11 from '../src/img/Card_Image/Seriallar/card11.jpeg'
+import SerialCard12 from '../src/img/Card_Image/Seriallar/card12.jpeg'
+import SerialCard13 from '../src/img/Card_Image/Seriallar/card13.jpg'
+import SerialCard14 from '../src/img/Card_Image/Seriallar/card14.jpg'
+import SerialCard15 from '../src/img/Card_Image/Seriallar/card15.jpeg'
+import SerialCard16 from '../src/img/Card_Image/Seriallar/card16.jpg'
+import SerialCard17 from '../src/img/Card_Image/Seriallar/card17.jpeg'
+import SerialCard18 from '../src/img/Card_Image/Seriallar/card18.jpg'
+import SerialCard19 from '../src/img/Card_Image/Seriallar/card19.jpg'
+import SerialCard20 from '../src/img/Card_Image/Seriallar/card20.jpg'
+import SerialCard21 from '../src/img/Card_Image/Seriallar/card21.jpg'
+import SerialCard22 from '../src/img/Card_Image/Seriallar/card22.jpg'
+import SerialCard23 from '../src/img/Card_Image/Seriallar/card23.jpg'
+import SerialCard24 from '../src/img/Card_Image/Seriallar/card24.jpg'
+
 
 // Animelar 
 import AnimeCard1 from '../src/img/Card_Image/Animelar/Card1.jpg'
@@ -83,8 +115,13 @@ import rasm4 from '../src/img/Scanesfilm_Image/rasm4.png'
 import rasm5 from '../src/img/Scanesfilm_Image/rasm5.png'
 
 export const images = {
-    Logo, Menu, close, lefticon, searchicon, allicon,exitscreenicon,fullscreenicon,nexticon,prewicon,usericon,cashicon,ransomhistoryicon,promocodeicon,deviseicon,
+    Logo, Menu, close, lefticon, searchicon, allicon, exitscreenicon, fullscreenicon, nexticon, prewicon, usericon, cashicon, ransomhistoryicon, promocodeicon, deviseicon, loginicon, voiseicon, refreshicon, mutedicon,
+    favouriteicon, activefavouriteicon, shareicon, deleteicon,
 };
+// Videos 
+import Cardvideo1 from '../src/video/Reklama/cardvideo1.mp4'
+import Cardvideo2 from '../src/video/Reklama/cardvideo2.mp4'
+import Cardvideo3 from '../src/video/Reklama/cardvideo3.mp4'
 
 // Container 
 export const data = {
@@ -109,6 +146,10 @@ export const FilmData = [
         click: "Obuna",
         buy: "Sotib olish",
         scanes: [rasm1, rasm2, rasm3, rasm4, rasm5],
+
+        badge: "Premyera",
+        film: Cardvideo2,
+        badge: "Premyera",
     },
     {
         id: uuidv4(),
@@ -121,6 +162,8 @@ export const FilmData = [
         click: "Obuna",
         buy: "Sotib olish",
         scanes: [rasm1, rasm2, rasm3, rasm4, rasm5],
+
+        badge: "Premyera",
 
     },
     {
@@ -135,6 +178,8 @@ export const FilmData = [
         buy: "Sotib olish",
         scanes: [rasm1, rasm2, rasm3, rasm4, rasm5],
 
+        badge: "Premyera",
+
     },
     {
         id: uuidv4(),
@@ -147,6 +192,8 @@ export const FilmData = [
         click: "Obuna",
         buy: "Sotib olish",
         scanes: [rasm1, rasm2, rasm3, rasm4, rasm5],
+
+        badge: "Premyera",
 
     },
     {
@@ -161,6 +208,8 @@ export const FilmData = [
         buy: "Sotib olish",
         scanes: [rasm1, rasm2, rasm3, rasm4, rasm5],
 
+        badge: "Premyera",
+
     },
     {
         id: uuidv4(),
@@ -173,6 +222,8 @@ export const FilmData = [
         click: "Obuna",
         buy: "Sotib olish",
         scanes: [rasm1, rasm2, rasm3, rasm4, rasm5],
+
+        badge: "Premyera",
 
     },
     {
@@ -187,6 +238,8 @@ export const FilmData = [
         buy: "Sotib olish",
         scanes: [rasm1, rasm2, rasm3, rasm4, rasm5],
 
+        badge: "Premyera",
+
     },
     {
         id: uuidv4(),
@@ -199,6 +252,8 @@ export const FilmData = [
         click: "Obuna",
         buy: "Sotib olish",
         scanes: [rasm1, rasm2, rasm3, rasm4, rasm5],
+
+        badge: "Premyera",
 
     },
     {
@@ -213,6 +268,8 @@ export const FilmData = [
         buy: "Sotib olish",
         scanes: [rasm1, rasm2, rasm3, rasm4, rasm5],
 
+        badge: "Premyera",
+
     },
     {
         id: uuidv4(),
@@ -225,6 +282,218 @@ export const FilmData = [
         click: "Obuna",
         buy: "Sotib olish",
         scanes: [rasm1, rasm2, rasm3, rasm4, rasm5],
+
+        badge: "Premyera",
+
+    },
+    {
+        id: uuidv4(),
+        card1: FilmCard11,
+        year: "13+",
+        date: "2021",
+        quality: "Full HD",
+        title: "Spider-Man: No Way Home",
+        desc: "Peter Parker multiverse bilan yuzlashib, eski dushmanlariga qarshi chiqadi.",
+        click: "Obuna",
+        buy: "Sotib olish",
+        scanes: [rasm1, rasm2, rasm3, rasm4, rasm5],
+
+        badge: "Premyera",
+
+    },
+    {
+        id: uuidv4(),
+        card1: FilmCard12,
+        year: "13+",
+        date: "2021",
+        quality: "Full HD",
+        title: "Spider-Man: No Way Home",
+        desc: "Peter Parker multiverse bilan yuzlashib, eski dushmanlariga qarshi chiqadi.",
+        click: "Obuna",
+        buy: "Sotib olish",
+        scanes: [rasm1, rasm2, rasm3, rasm4, rasm5],
+
+        badge: "Premyera",
+
+    },
+    {
+        id: uuidv4(),
+        card1: FilmCard13,
+        year: "13+",
+        date: "2021",
+        quality: "Full HD",
+        title: "Spider-Man: No Way Home",
+        desc: "Peter Parker multiverse bilan yuzlashib, eski dushmanlariga qarshi chiqadi.",
+        click: "Obuna",
+        buy: "Sotib olish",
+        scanes: [rasm1, rasm2, rasm3, rasm4, rasm5],
+
+        badge: "Premyera",
+
+    },
+    {
+        id: uuidv4(),
+        card1: FilmCard14,
+        year: "13+",
+        date: "2021",
+        quality: "Full HD",
+        title: "Spider-Man: No Way Home",
+        desc: "Peter Parker multiverse bilan yuzlashib, eski dushmanlariga qarshi chiqadi.",
+        click: "Obuna",
+        buy: "Sotib olish",
+        scanes: [rasm1, rasm2, rasm3, rasm4, rasm5],
+
+        badge: "Premyera",
+
+    },
+    {
+        id: uuidv4(),
+        card1: FilmCard15,
+        year: "13+",
+        date: "2021",
+        quality: "Full HD",
+        title: "Spider-Man: No Way Home",
+        desc: "Peter Parker multiverse bilan yuzlashib, eski dushmanlariga qarshi chiqadi.",
+        click: "Obuna",
+        buy: "Sotib olish",
+        scanes: [rasm1, rasm2, rasm3, rasm4, rasm5],
+
+        badge: "Premyera",
+
+    },
+    {
+        id: uuidv4(),
+        card1: FilmCard16,
+        year: "13+",
+        date: "2021",
+        quality: "Full HD",
+        title: "Spider-Man: No Way Home",
+        desc: "Peter Parker multiverse bilan yuzlashib, eski dushmanlariga qarshi chiqadi.",
+        click: "Obuna",
+        buy: "Sotib olish",
+        scanes: [rasm1, rasm2, rasm3, rasm4, rasm5],
+
+        badge: "Premyera",
+    },
+    {
+        id: uuidv4(),
+        card1: FilmCard17,
+        year: "13+",
+        date: "2021",
+        quality: "Full HD",
+        title: "Spider-Man: No Way Home",
+        desc: "Peter Parker multiverse bilan yuzlashib, eski dushmanlariga qarshi chiqadi.",
+        click: "Obuna",
+        buy: "Sotib olish",
+        scanes: [rasm1, rasm2, rasm3, rasm4, rasm5],
+
+        badge: "Premyera",
+
+    },
+    {
+        id: uuidv4(),
+        card1: FilmCard18,
+        year: "13+",
+        date: "2021",
+        quality: "Full HD",
+        title: "Spider-Man: No Way Home",
+        desc: "Peter Parker multiverse bilan yuzlashib, eski dushmanlariga qarshi chiqadi.",
+        click: "Obuna",
+        buy: "Sotib olish",
+        scanes: [rasm1, rasm2, rasm3, rasm4, rasm5],
+
+        badge: "Premyera",
+
+    },
+    {
+        id: uuidv4(),
+        card1: FilmCard19,
+        year: "13+",
+        date: "2021",
+        quality: "Full HD",
+        title: "Spider-Man: No Way Home",
+        desc: "Peter Parker multiverse bilan yuzlashib, eski dushmanlariga qarshi chiqadi.",
+        click: "Obuna",
+        buy: "Sotib olish",
+        scanes: [rasm1, rasm2, rasm3, rasm4, rasm5],
+
+        badge: "Premyera",
+
+    },
+    {
+        id: uuidv4(),
+        card1: FilmCard20,
+        year: "13+",
+        date: "2021",
+        quality: "Full HD",
+        title: "Spider-Man: No Way Home",
+        desc: "Peter Parker multiverse bilan yuzlashib, eski dushmanlariga qarshi chiqadi.",
+        click: "Obuna",
+        buy: "Sotib olish",
+        scanes: [rasm1, rasm2, rasm3, rasm4, rasm5],
+
+        badge: "Premyera",
+
+    },
+    {
+        id: uuidv4(),
+        card1: FilmCard21,
+        year: "13+",
+        date: "2021",
+        quality: "Full HD",
+        title: "Spider-Man: No Way Home",
+        desc: "Peter Parker multiverse bilan yuzlashib, eski dushmanlariga qarshi chiqadi.",
+        click: "Obuna",
+        buy: "Sotib olish",
+        scanes: [rasm1, rasm2, rasm3, rasm4, rasm5],
+
+        badge: "Premyera",
+
+    },
+    {
+        id: uuidv4(),
+        card1: FilmCard22,
+        year: "13+",
+        date: "2021",
+        quality: "Full HD",
+        title: "Spider-Man: No Way Home",
+        desc: "Peter Parker multiverse bilan yuzlashib, eski dushmanlariga qarshi chiqadi.",
+        click: "Obuna",
+        buy: "Sotib olish",
+        scanes: [rasm1, rasm2, rasm3, rasm4, rasm5],
+
+        badge: "Premyera",
+
+    },
+    {
+        id: uuidv4(),
+        card1: FilmCard23,
+        year: "13+",
+        date: "2021",
+        quality: "Full HD",
+        title: "Spider-Man: No Way Home",
+        desc: "Peter Parker multiverse bilan yuzlashib, eski dushmanlariga qarshi chiqadi.",
+        click: "Obuna",
+        buy: "Sotib olish",
+        scanes: [rasm1, rasm2, rasm3, rasm4, rasm5],
+
+        badge: "Premyera",
+
+    },
+    {
+        id: uuidv4(),
+        card1: FilmCard24,
+        year: "13+",
+        date: "2021",
+        quality: "Full HD",
+        title: "Spider-Man: No Way Home",
+        desc: "Peter Parker multiverse bilan yuzlashib, eski dushmanlariga qarshi chiqadi.",
+        click: "Obuna",
+        buy: "Sotib olish",
+        scanes: [rasm1, rasm2, rasm3, rasm4, rasm5],
+
+        badge: "Premyera",
+        addedAt: "2025-09-25", 
 
     },
 ]
@@ -243,6 +512,8 @@ export const SerialData = [
         buy: "Sotib olish",
         scanes: [rasm1, rasm2, rasm3, rasm4, rasm5],
 
+        badge: "Premyera",
+        serial: Cardvideo3,
     },
     {
         id: uuidv4(),
@@ -361,6 +632,177 @@ export const SerialData = [
         scanes: [rasm1, rasm2, rasm3, rasm4, rasm5],
 
     },
+    {
+        id: uuidv4(),
+        card1: SerialCard11,
+        year: "18+",
+        date: "2024",
+        quality: "4K",
+        title: "Marvels",
+        desc: "Qahramonlarning yangi ittifoqi paydo bo‘ladi.",
+        click: "Obuna",
+        buy: "Sotib olish",
+        scanes: [rasm1, rasm2, rasm3, rasm4, rasm5],
+
+    },
+    {
+        id: uuidv4(),
+        card1: SerialCard12,
+        year: "18+",
+        date: "2024",
+        quality: "4K",
+        title: "Marvels",
+        desc: "Qahramonlarning yangi ittifoqi paydo bo‘ladi.",
+        click: "Obuna",
+        buy: "Sotib olish",
+        scanes: [rasm1, rasm2, rasm3, rasm4, rasm5],
+
+    },
+    {
+        id: uuidv4(),
+        card1: SerialCard13,
+        year: "18+",
+        date: "2024",
+        quality: "4K",
+        title: "Marvels",
+        desc: "Qahramonlarning yangi ittifoqi paydo bo‘ladi.",
+        click: "Obuna",
+        buy: "Sotib olish",
+        scanes: [rasm1, rasm2, rasm3, rasm4, rasm5],
+
+    }, {
+        id: uuidv4(),
+        card1: SerialCard14,
+        year: "18+",
+        date: "2024",
+        quality: "4K",
+        title: "Marvels",
+        desc: "Qahramonlarning yangi ittifoqi paydo bo‘ladi.",
+        click: "Obuna",
+        buy: "Sotib olish",
+        scanes: [rasm1, rasm2, rasm3, rasm4, rasm5],
+
+    }, {
+        id: uuidv4(),
+        card1: SerialCard15,
+        year: "18+",
+        date: "2024",
+        quality: "4K",
+        title: "Marvels",
+        desc: "Qahramonlarning yangi ittifoqi paydo bo‘ladi.",
+        click: "Obuna",
+        buy: "Sotib olish",
+        scanes: [rasm1, rasm2, rasm3, rasm4, rasm5],
+
+    }, {
+        id: uuidv4(),
+        card1: SerialCard16,
+        year: "18+",
+        date: "2024",
+        quality: "4K",
+        title: "Marvels",
+        desc: "Qahramonlarning yangi ittifoqi paydo bo‘ladi.",
+        click: "Obuna",
+        buy: "Sotib olish",
+        scanes: [rasm1, rasm2, rasm3, rasm4, rasm5],
+
+    }, {
+        id: uuidv4(),
+        card1: SerialCard17,
+        year: "18+",
+        date: "2024",
+        quality: "4K",
+        title: "Marvels",
+        desc: "Qahramonlarning yangi ittifoqi paydo bo‘ladi.",
+        click: "Obuna",
+        buy: "Sotib olish",
+        scanes: [rasm1, rasm2, rasm3, rasm4, rasm5],
+
+    }, {
+        id: uuidv4(),
+        card1: SerialCard18,
+        year: "18+",
+        date: "2024",
+        quality: "4K",
+        title: "Marvels",
+        desc: "Qahramonlarning yangi ittifoqi paydo bo‘ladi.",
+        click: "Obuna",
+        buy: "Sotib olish",
+        scanes: [rasm1, rasm2, rasm3, rasm4, rasm5],
+
+    }, {
+        id: uuidv4(),
+        card1: SerialCard19,
+        year: "18+",
+        date: "2024",
+        quality: "4K",
+        title: "Marvels",
+        desc: "Qahramonlarning yangi ittifoqi paydo bo‘ladi.",
+        click: "Obuna",
+        buy: "Sotib olish",
+        scanes: [rasm1, rasm2, rasm3, rasm4, rasm5],
+
+    }, {
+        id: uuidv4(),
+        card1: SerialCard20,
+        year: "18+",
+        date: "2024",
+        quality: "4K",
+        title: "Marvels",
+        desc: "Qahramonlarning yangi ittifoqi paydo bo‘ladi.",
+        click: "Obuna",
+        buy: "Sotib olish",
+        scanes: [rasm1, rasm2, rasm3, rasm4, rasm5],
+
+    }, {
+        id: uuidv4(),
+        card1: SerialCard21,
+        year: "18+",
+        date: "2024",
+        quality: "4K",
+        title: "Marvels",
+        desc: "Qahramonlarning yangi ittifoqi paydo bo‘ladi.",
+        click: "Obuna",
+        buy: "Sotib olish",
+        scanes: [rasm1, rasm2, rasm3, rasm4, rasm5],
+
+    }, {
+        id: uuidv4(),
+        card1: SerialCard22,
+        year: "18+",
+        date: "2024",
+        quality: "4K",
+        title: "Marvels",
+        desc: "Qahramonlarning yangi ittifoqi paydo bo‘ladi.",
+        click: "Obuna",
+        buy: "Sotib olish",
+        scanes: [rasm1, rasm2, rasm3, rasm4, rasm5],
+
+    }, {
+        id: uuidv4(),
+        card1: SerialCard23,
+        year: "18+",
+        date: "2024",
+        quality: "4K",
+        title: "Marvels",
+        desc: "Qahramonlarning yangi ittifoqi paydo bo‘ladi.",
+        click: "Obuna",
+        buy: "Sotib olish",
+        scanes: [rasm1, rasm2, rasm3, rasm4, rasm5],
+
+    }, {
+        id: uuidv4(),
+        card1: SerialCard24,
+        year: "18+",
+        date: "2024",
+        quality: "4K",
+        title: "Marvels",
+        desc: "Qahramonlarning yangi ittifoqi paydo bo‘ladi.",
+        click: "Obuna",
+        buy: "Sotib olish",
+        scanes: [rasm1, rasm2, rasm3, rasm4, rasm5],
+
+    },
 ]
 
 // Anime list
@@ -376,7 +818,7 @@ export const AnimeData = [
         click: "Obuna",
         buy: "Sotib olish",
         scanes: [rasm1, rasm2, rasm3, rasm4, rasm5],
-
+        anime: Cardvideo2,
     },
     {
         id: uuidv4(),
@@ -536,7 +978,8 @@ export const MultfilmData = [
         click: "Obuna",
         buy: "Sotib olish",
         scanes: [rasm1, rasm2, rasm3, rasm4, rasm5],
-
+        multfilm: Cardvideo3,
+        possible: false,
     },
     {
         id: uuidv4(),

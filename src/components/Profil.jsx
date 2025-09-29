@@ -6,7 +6,7 @@ const Profil = () => {
     return (
         <section className={`${data.Container}`}>
             <h1 className='text-3xl font-semibold text-green-600 mt-5 mb-10'>Profil <span className='text-white'>:</span></h1>
-            <nav className='flex flex-col items-start gap-y-3'>
+            <ul className='flex flex-col items-start gap-y-3'>
                 {/* Accaunts  */}
                 <NavLink className='flex items-center gap-3 px-3 py-2 border w-full max-w-48 rounded-lg bg-blue-300/40 border-blue-300/30 hover:bg-blue-300/55 hover:border-blue-300/60 hover:transition-all hover:duration-200'>
                     <img width={34} height={34} src={images.usericon} alt="" />
@@ -30,7 +30,7 @@ const Profil = () => {
                     <img width={34} height={34} src={images.promocodeicon} alt="" />
                     <span className='text-xl font-semibold'>Promocode :</span>
                 </NavLink>
-            </nav>
+            </ul>
         </section>
     )
 }

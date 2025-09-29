@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 nav > a.active {
-    @apply text-white
+    @apply border-white/50 bg-white/25
 }
 
 /* Asosiy scroll bar */
