@@ -37,7 +37,7 @@ const Film = () => {
   const renderSeeAll = (id) => (
     <li
       key={id}
-      className="flex flex-col items-center justify-center border border-white/20 rounded-lg hover:bg-white/20 transition-all duration-300 cursor-pointer h-[275px] max-sm:w-[130px] max-sm:h-[200px]"
+      className="flex flex-col items-center justify-center border border-white/20 rounded-lg hover:bg-white/20 transition-all duration-300 cursor-pointer h-[275px] max-sm:w-[160px] max-sm:h-[200px]"
     >
       <Link to="/film" className="flex flex-col items-center justify-center gap-y-3">
         <span className="text-white text-xl font-semibold max-sm:text-base">Barchasini ko‘rish</span>
