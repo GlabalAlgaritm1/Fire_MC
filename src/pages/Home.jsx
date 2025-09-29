@@ -74,7 +74,7 @@ const Home = () => {
   const currentVideo = allVideos[currentIndex]
 
   return (
-    <section className={`${data.Container} px-4 md:px-8 lg:px-16`}>
+    <section className={`${data.Container}`}>
       {/* Filmlar */}
       <Film />
       <Seriallar />
@@ -136,7 +136,7 @@ const Home = () => {
 
       {/* Ko‘proq ko‘rsatish tugmasi */}
       <div className="flex justify-center mt-8">
-        <button className='w-full sm:w-auto max-w-3xl px-5 py-2 border rounded-lg text-center hover:bg-white/15 hover:border-white/15 transition-all duration-200'>
+        <button className='w-full max-sm:w-auto max-w-3xl px-5 py-2 border rounded-lg text-center hover:bg-white/15 hover:border-white/15 transition-all duration-200'>
           <span className='font-semibold text-lg text-white'>Ko‘proq Ko‘rsatish</span>
         </button>
       </div>

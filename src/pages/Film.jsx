@@ -16,7 +16,7 @@ const Film = () => {
         <img
           src={item.card1}
           alt="Film Card"
-          className="w-full max-w-[300px] h-[275px] border-b object-cover rounded-lg mb-3"
+          className="w-full max-w-[300px] h-[275px] border-b object-cover rounded-lg mb-3 max-md:h-[250px]  max-sm:w-[150px] max-sm:h-[200px]"
         />
         <span className="absolute bottom-[72px] right-2 font-semibold bg-white/10 text-white text-base p-1 rounded-md border border-white/20 opacity-100 group-hover:opacity-0 transition-opacity duration-300">
           {item.year}
