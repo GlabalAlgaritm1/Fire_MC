@@ -57,7 +57,7 @@ const Film = () => {
         <Swiper
           grabCursor={true}
           breakpoints={{
-            0: { slidesPerView: 2, slidesPerGroup: 2, spaceBetween: 8 },   // 📱 Telefon
+            0: { slidesPerView: 2, slidesPerGroup: 2, spaceBetween: 4 },   // 📱 Telefon
             640: { slidesPerView: 4, slidesPerGroup: 4, spaceBetween: 16 }, // 📲 Planshet
             1024: { slidesPerView: 6, slidesPerGroup: 6, spaceBetween: 20 } // 💻 Katta ekran
           }}
@@ -72,7 +72,7 @@ const Film = () => {
         <Swiper
           grabCursor={true}
           breakpoints={{
-            0: { slidesPerView: 2, slidesPerGroup: 2, spaceBetween: 8 },
+            0: { slidesPerView: 2, slidesPerGroup: 2, spaceBetween: 4 },
             640: { slidesPerView: 4, slidesPerGroup: 4, spaceBetween: 16 },
             1024: { slidesPerView: 6, slidesPerGroup: 6, spaceBetween: 20 }
           }}
