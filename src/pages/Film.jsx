@@ -16,9 +16,12 @@ const Film = () => {
         <img
           src={item.card1}
           alt="Film Card"
-          className="w-full max-w-[300px] h-[275px] border-b object-cover rounded-lg mb-3
-                     max-md:h-[250px] 
-                     max-sm:w-full max-sm:h-[220px] max-sm:object-cover"
+          className="
+            w-full object-cover rounded-lg mb-3
+            h-[275px] max-w-[300px]             /* 🖥 katta ekranda */
+            max-md:h-[250px] 
+            max-sm:h-[240px] max-sm:max-w-full  /* 📱 telefonda to‘liq kenglik va balandroq */
+          "
         />
         <span className="absolute bottom-[72px] right-2 font-semibold bg-white/10 text-white text-base p-1 rounded-md border border-white/20 opacity-100 group-hover:opacity-0 transition-opacity duration-300">
           {item.year}
@@ -39,7 +42,7 @@ const Film = () => {
   const renderSeeAll = (id) => (
     <li
       key={id}
-      className="flex flex-col items-center justify-center border border-white/20 rounded-lg hover:bg-white/20 transition-all duration-300 cursor-pointer h-[275px] max-sm:w-full max-sm:max-w-[200px] max-sm:max-h-[220px]"
+      className="flex flex-col items-center justify-center border border-white/20 rounded-lg hover:bg-white/20 transition-all duration-300 cursor-pointer h-[275px] max-sm:h-[240px]"
     >
       <Link to="/film" className="flex flex-col items-center justify-center gap-y-3">
         <span className="text-white text-xl font-semibold max-sm:text-base">Barchasini ko‘rish</span>
